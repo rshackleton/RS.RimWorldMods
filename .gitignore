@@ -1,0 +1,11 @@
+# Ignore jetbrains idea folder
+\.idea/
+
+# Ignore dependencies
+packages/
+
+# Ignore debug symbols
+*.pdb
+
+# Ignore output
+obj/
