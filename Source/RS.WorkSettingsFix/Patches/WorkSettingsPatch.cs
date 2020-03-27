@@ -14,14 +14,31 @@ namespace RS.WorkSettingsFix.Patches
         // ReSharper disable once InconsistentNaming
         static void Prefix(Pawn __instance)
         {
-            // Force-initialise work settings for colonists and prisoners.
-            if (__instance.workSettings == null && (__instance.IsColonist || __instance.IsPrisonerOfColony))
+            if (__instance.workSettings != null)
             {
-                Log.Message($"[RS] WorkSettingsFix: Fixing missing work settings for {__instance.Name}");
-                    
-                __instance.workSettings = new Pawn_WorkSettings(__instance);
-                __instance.workSettings.EnableAndInitialize();
+                return;
             }
+
+            if (__instance.Dead)
+            {
+                return;
+            }
+
+            if (__instance.AnimalOrWildMan())
+            {
+                return;
+            }
+
+            if (!(__instance.IsColonist || __instance.IsPrisonerOfColony))
+            {
+                return;
+            }
+                
+            Log.Message($"[RS] WorkSettingsFix: Fixing missing work settings for {__instance.Name}");
+
+            // Force-initialise work settings for colonists and prisoners.
+            __instance.workSettings = new Pawn_WorkSettings(__instance);
+            __instance.workSettings.EnableAndInitialize();
         }
     }
 }
