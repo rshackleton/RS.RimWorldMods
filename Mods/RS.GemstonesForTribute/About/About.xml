@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>[RS] Gemstones for Tribute</name>
+  <packageId>rs.gemstonesfortribute</packageId>
+  <author>Shackleberry</author>
+  <description>
+    Updates the Royal Tribute Collector to accept the gemstones added by the Gemstones mod.
+  </description>
+  <supportedVersions>
+    <li>1.1</li>
+  </supportedVersions>
+  <loadAfter>
+    <li>zylle.Gemstones</li>
+  </loadAfter>
+  <modDependencies>
+    <li>
+      <packageId>zylle.Gemstones</packageId>
+      <displayName>Gemstones</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2000801414</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+</ModMetaData>
