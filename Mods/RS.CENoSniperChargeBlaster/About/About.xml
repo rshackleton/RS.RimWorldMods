@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>[RS] CE: No Sniper Charge Blaster</name>
+  <packageId>rs.cenosniperchargeblaster</packageId>
+  <author>Shackleberry</author>
+  <description>
+    Tweaks the Heavy Charge Blaster used by Centipedes to be less accurate - primarily by copying minigun accuracy stats.
+  </description>
+  <supportedVersions>
+    <li>1.1</li>
+  </supportedVersions>
+  <loadAfter>
+    <li>CETeam.CombatExtended</li>
+  </loadAfter>
+  <modDependencies>
+    <li>
+      <packageId>CETeam.CombatExtended</packageId>
+      <displayName>Combat Extended</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/1631756268</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+</ModMetaData>
