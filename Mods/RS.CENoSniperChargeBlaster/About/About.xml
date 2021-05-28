@@ -4,11 +4,10 @@
   <name>[RS] CE: No Sniper Charge Blaster</name>
   <packageId>rs.cenosniperchargeblaster</packageId>
   <author>Shackleberry</author>
-  <description>
-    Tweaks the Heavy Charge Blaster used by Centipedes to be less accurate - primarily by copying minigun accuracy stats.
-  </description>
+  <description>Tweaks the Heavy Charge Blaster used by Centipedes to be less accurate - primarily by copying minigun accuracy stats.</description>
   <supportedVersions>
     <li>1.1</li>
+    <li>1.2</li>
   </supportedVersions>
   <loadAfter>
     <li>CETeam.CombatExtended</li>
