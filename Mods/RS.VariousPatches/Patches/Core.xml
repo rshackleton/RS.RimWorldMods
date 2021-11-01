@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Improve yields from centipedes greatly -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Mech_Centipede"]/butcherProducts</xpath>
+    <value>
+      <butcherProducts>
+        <Steel>150</Steel>
+        <Plasteel>50</Plasteel>
+        <ComponentIndustrial>10</ComponentIndustrial>
+        <ComponentSpacer>1</ComponentSpacer>
+      </butcherProducts>
+    </value>
+  </Operation>
+
+  <!-- Improve yields from centipedes greatly -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Mech_Termite"]/butcherProducts</xpath>
+    <value>
+      <butcherProducts>
+        <Steel>150</Steel>
+        <Plasteel>50</Plasteel>
+        <ComponentIndustrial>10</ComponentIndustrial>
+        <ComponentSpacer>1</ComponentSpacer>
+      </butcherProducts>
+    </value>
+  </Operation>
+
+  <!-- Improve yields from non-centipedes slightly -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="BaseMechanoidWalker"]/butcherProducts</xpath>
+    <value>
+      <butcherProducts>
+        <Steel>50</Steel>
+        <Plasteel>25</Plasteel>
+        <ComponentIndustrial>2</ComponentIndustrial>
+      </butcherProducts>
+    </value>
+  </Operation>
+
+  <!-- Update description -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SunLamp"]/description</xpath>
+    <value>
+      <description>An industrial lamp which lights an area brightly enough to grow crops, but consumes a large amount of power. Automatically turns itself off at night.</description>
+    </value>
+  </Operation>
+
+  <!-- Reduce sun lamp power consumption -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SunLamp"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+    <value>
+      <basePowerConsumption>500</basePowerConsumption>
+    </value>
+  </Operation>
+
+</Patch>

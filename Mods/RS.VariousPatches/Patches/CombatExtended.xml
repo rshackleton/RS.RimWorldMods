@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <!-- Reset Centipede spawn rate -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/FactionDef[defName="Mechanoid"]/pawnGroupMakers/li[1]/options/Mech_Centipede</xpath>
+          <value>
+            <Mech_Centipede>10</Mech_Centipede>
+          </value>
+        </li>
+
+        <!-- Revert back to non-smart immediate attack raids -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RaidStrategyDef[defName="ImmediateAttack"]/workerClass</xpath>
+          <value>
+            <workerClass>RaidStrategyWorker_ImmediateAttack</workerClass>
+          </value>
+        </li>
+
+        <!-- Undo wealth limit on standard raids -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RaidStrategyDef[defName="ImmediateAttack"]/selectionWeightPerPointsCurve/points</xpath>
+          <value>
+            <points>
+              <li>(100,0.75)</li>
+              <li>(700,0.25)</li>
+            </points>
+          </value>
+        </li>
+
+        <!-- Renable "stage then attack" raids -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RaidStrategyDef[defName="StageThenAttack"]/selectionWeightPerPointsCurve/points</xpath>
+          <value>
+            <points>
+              <li>(0,1.25)</li>
+            </points>
+          </value>
+        </li>
+
+        <!-- Reapply vanilla chance for smart raids -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RaidStrategyDef[defName="ImmediateAttackSmart"]/pointsFactorCurve/points</xpath>
+          <value>
+            <points>
+              <li>(100,0)</li>
+              <li>(700,0.75)</li>
+            </points>
+          </value>
+        </li>
+
+        <!-- Reapply vanilla entry options for smart raids -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RaidStrategyDef[defName="ImmediateAttackSmart"]/arriveModes</xpath>
+          <value>
+            <arriveModes>
+              <li>EdgeDrop</li>
+              <li>EdgeWalkIn</li>
+              <li>CenterDrop</li>
+              <li>RandomDrop</li>
+              <li>EdgeDropGroups</li>
+              <li>EdgeWalkInGroups</li>
+            </arriveModes>
+          </value>
+        </li>
+
+        <!-- Reapply vanilla chance for sappers -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RaidStrategyDef[defName="ImmediateAttackSappers"]/pointsFactorCurve/points</xpath>
+          <value>
+            <points>
+              <li>(100,  0.00)</li>
+              <li>(700,  1.50)</li>
+              <li>(1400, 2.00)</li>
+              <li>(2800, 2.50)</li>
+            </points>
+          </value>
+        </li>
+
+        <!-- Disable sapper option for Centipede -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/PawnKindDef[defName="Mech_Centipede"]/canBeSapper</xpath>
+          <value>
+            <canBeSapper>false</canBeSapper>
+          </value>
+        </li>
+
+        <!-- Disable sapper option for Pikeman -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/PawnKindDef[defName="Mech_Pikeman"]/canBeSapper</xpath>
+          <value>
+            <canBeSapper>false</canBeSapper>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>

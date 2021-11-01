@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Glass+Lights</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>Raise The Roof 1.2</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <!--Transparent roofs require glass-->
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="RTR_TransparentRoof"]/costList</xpath>
+            <value>
+              <costList>
+                <Steel>30</Steel>
+                <Glass>1</Glass>
+              </costList>
+            </value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="RTR_TransparentSolarRoof"]/costList</xpath>
+            <value>
+              <costList>
+                <Steel>30</Steel>
+                <Glass>1</Glass>
+                <ComponentIndustrial>1</ComponentIndustrial>
+              </costList>
+            </value>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+</Patch>
