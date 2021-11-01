@@ -9,3 +9,6 @@ packages/
 
 # Ignore output
 obj/
+
+# Ignore vs settings
+.vs/
