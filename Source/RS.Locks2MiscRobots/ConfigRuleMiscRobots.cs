@@ -1,5 +1,6 @@
 ﻿using Locks2.Core;
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
@@ -11,6 +12,14 @@ namespace Locks2MiscRobots
     {
         public bool enabled = true;
 
+        private readonly string[] kindDefNamePrefixes = new[]
+        {
+            // Misc. Robots
+            "AIRobot_",
+            // Misc. Robots++
+            "RPP_Bot_"
+        };
+
         public override float Height => 54;
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -18,8 +27,7 @@ namespace Locks2MiscRobots
         {
             if (!enabled) return false;
 
-            // @note: Works, might be a better way of doing this though. Couldn't figure out how to check pawn race parent...
-            return pawn.kindDef.defName.StartsWith("AIRobot_", StringComparison.OrdinalIgnoreCase);
+            return kindDefNamePrefixes.Any(prefix => pawn.kindDef.defName.StartsWith(prefix, StringComparison.OrdinalIgnoreCase));
         }
 
         public override void DoContent(IEnumerable<Pawn> pawns, Rect rect, Action notifySelectionBegan, Action notifySelectionEnded)
