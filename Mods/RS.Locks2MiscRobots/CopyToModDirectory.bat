@@ -1,10 +1,10 @@
 :: ========= Variables =========
 
-SET mod_name=CELessCentipedesPlease
+SET mod_name=RS.Locks2MiscRobots
 SET target_directory=D:\Games\Steam\steamapps\common\RimWorld\Mods\%mod_name%
 
 :: ========= Copy ==========
- 
+
 rd "%target_directory%" /s /q
 mkdir "%target_directory%"
 
@@ -12,13 +12,13 @@ mkdir "%target_directory%"
 mkdir "%target_directory%\About"
 xcopy "About\*.*" "%target_directory%\About" /e
 
-:: Patches
-mkdir "%target_directory%\Patches"
-xcopy "Patches\*.*" "%target_directory%\Patches" /e
+:: Assemblies
+mkdir "%target_directory%\Assemblies"
+xcopy "Assemblies\*.*" "%target_directory%\Assemblies" /e
+
+:: Languages
+mkdir "%target_directory%\Languages"
+xcopy "Languages\*.*" "%target_directory%\Languages" /e
 
 :: LoadFolders.xml
 copy "LoadFolders.xml" "%target_directory%\LoadFolders.xml"
-
-:: ========= Run ==========
-
-start steam://rungameid/294100

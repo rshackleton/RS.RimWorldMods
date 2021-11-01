@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS.WorkSettingsFix", "RS.WorkSettingsFix\RS.WorkSettingsFix.csproj", "{2B9E017D-DD47-42EF-8CBB-340AD2E542DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS.Locks2MiscRobots", "RS.Locks2MiscRobots\RS.Locks2MiscRobots.csproj", "{D81FE7A1-72ED-4CBE-8241-481E4D170BFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +17,15 @@ Global
 		{2B9E017D-DD47-42EF-8CBB-340AD2E542DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B9E017D-DD47-42EF-8CBB-340AD2E542DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B9E017D-DD47-42EF-8CBB-340AD2E542DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D81FE7A1-72ED-4CBE-8241-481E4D170BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D81FE7A1-72ED-4CBE-8241-481E4D170BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D81FE7A1-72ED-4CBE-8241-481E4D170BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D81FE7A1-72ED-4CBE-8241-481E4D170BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE72ED55-3A77-4E37-842B-6B13D77CD9AB}
 	EndGlobalSection
 EndGlobal
