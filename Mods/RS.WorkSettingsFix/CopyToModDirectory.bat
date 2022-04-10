@@ -1,6 +1,6 @@
 :: ========= Variables =========
 
-SET mod_name=WorkSettingsFix
+SET mod_name=RS.WorkSettingsFix
 SET target_directory=D:\Games\Steam\steamapps\common\RimWorld\Mods\%mod_name%
 
 :: ========= Copy ==========

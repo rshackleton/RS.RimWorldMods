@@ -1,6 +1,6 @@
 :: ========= Variables =========
 
-SET mod_name=CENoMechSappersPlease
+SET mod_name=RS.CENoMechSappersPlease
 SET target_directory=D:\Games\Steam\steamapps\common\RimWorld\Mods\%mod_name%
 
 :: ========= Copy ==========

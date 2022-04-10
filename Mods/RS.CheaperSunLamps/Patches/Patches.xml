@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+  <!-- Vanilla :: Sun Lamp -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SunLamp"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+    <value>
+      <basePowerConsumption>600</basePowerConsumption>
+    </value>
+  </Operation>
+
+  <!-- Simple Utilities: Ceiling :: Ceiling Sun Lamp -->
+  <!-- <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Owl_CeilingSunLamp"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+    <value>
+      <basePowerConsumption>600</basePowerConsumption>
+    </value>
+  </Operation> -->
+
+  <!-- VFE Spacer :: Bio Sun Lamp -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Spacer_SunLamp"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+    <value>
+      <basePowerConsumption>300</basePowerConsumption>
+    </value>
+  </Operation>
+
+</Patch>
