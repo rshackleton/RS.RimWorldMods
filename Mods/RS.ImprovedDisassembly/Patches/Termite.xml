@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mech_Termite"]/butcherProducts</xpath>
+		<value>
+			<butcherProducts>
+				<Steel>75</Steel>
+				<Plasteel>50</Plasteel>
+				<ComponentIndustrial>5</ComponentIndustrial>
+			</butcherProducts>
+		</value>
+	</Operation>
+</Patch>

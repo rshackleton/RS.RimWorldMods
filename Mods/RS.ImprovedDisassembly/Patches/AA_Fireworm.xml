@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AA_Fireworm"]/butcherProducts</xpath>
+			<value>
+				<butcherProducts>
+					<Steel>50</Steel>
+					<Plasteel>25</Plasteel>
+					<ComponentIndustrial>3</ComponentIndustrial>
+				</butcherProducts>
+			</value>
+		</match>
+	</Operation>
+</Patch>

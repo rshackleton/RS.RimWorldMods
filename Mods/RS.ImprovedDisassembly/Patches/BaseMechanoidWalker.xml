@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="BaseMechanoidWalker"]/butcherProducts</xpath>
+		<value>
+			<butcherProducts>
+				<Steel>50</Steel>
+				<Plasteel>25</Plasteel>
+				<ComponentIndustrial>3</ComponentIndustrial>
+			</butcherProducts>
+		</value>
+	</Operation>
+</Patch>
