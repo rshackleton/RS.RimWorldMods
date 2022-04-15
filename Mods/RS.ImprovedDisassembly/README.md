@@ -20,3 +20,15 @@ This mod aims to improve the rewards from disassembling the mechanoid corpses to
 - Steel: 50
 - Plasteel: 25
 - Components: 3
+
+Also supports mechanoids from Alpha Animals:
+
+**Demolisher/Goliath/Siegebreaker:**
+- 150 Steel
+- 75 Plasteel
+- 10 Components
+
+**Fireworm/Phalanx:**
+- 50 Steel
+- 25 Plasteel
+- 3 Components
