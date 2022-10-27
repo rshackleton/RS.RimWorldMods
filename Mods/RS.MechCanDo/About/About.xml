@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[RS] Mech Can Do</name>
+	<packageId>rs.mechcando</packageId>
+	<author>Shackleberry</author>
+	<description>
+		Removes the work type limitations for friendly mechanoids. Note: This has had very limited testing so there might be issues with mechs trying to perform specific tasks.
+	</description>
+	<supportedVersions>
+		<li>
+			1.4
+		</li>
+	</supportedVersions>
+</ModMetaData>
