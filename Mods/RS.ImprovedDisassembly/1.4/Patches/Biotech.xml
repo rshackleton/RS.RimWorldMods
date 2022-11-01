@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Light -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="LightMechanoid"]/butcherProducts</xpath>
+		<value>
+			<butcherProducts>
+				<Steel>25</Steel>
+				<Plasteel>15</Plasteel>
+				<ComponentIndustrial>1</ComponentIndustrial>
+			</butcherProducts>
+		</value>
+	</Operation>
+
+	<!-- Medium -->
+
+	<!-- Heavy -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="HeavyMechanoid"]/butcherProducts</xpath>
+		<value>
+			<butcherProducts>
+				<Steel>75</Steel>
+				<Plasteel>25</Plasteel>
+				<ComponentIndustrial>3</ComponentIndustrial>
+			</butcherProducts>
+		</value>
+	</Operation>
+
+	<!-- Super Heavy -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="SuperHeavyMechanoid"]/butcherProducts</xpath>
+		<value>
+			<butcherProducts>
+				<Steel>100</Steel>
+				<Plasteel>30</Plasteel>
+				<ComponentIndustrial>5</ComponentIndustrial>
+			</butcherProducts>
+		</value>
+	</Operation>
+</Patch>

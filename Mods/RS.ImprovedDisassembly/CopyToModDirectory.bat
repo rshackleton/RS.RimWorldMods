@@ -12,9 +12,10 @@ mkdir "%target_directory%"
 mkdir "%target_directory%\About"
 xcopy "About\*.*" "%target_directory%\About" /e
 
-:: Patches
-mkdir "%target_directory%\Patches"
-xcopy "Patches\*.*" "%target_directory%\Patches" /e
+:: 1.3
+mkdir "%target_directory%\1.3"
+xcopy "1.3\*.*" "%target_directory%\1.3" /e
 
-:: LoadFolders.xml
-copy "LoadFolders.xml" "%target_directory%\LoadFolders.xml"
+:: 1.4
+mkdir "%target_directory%\1.4"
+xcopy "1.4\*.*" "%target_directory%\1.4" /e
