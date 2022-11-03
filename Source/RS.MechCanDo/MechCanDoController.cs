@@ -52,11 +52,10 @@ namespace RS.MechCanDo
             }
 
             // Or define new setting and store handle.
-            var handle = Settings.GetHandle(
-                handleName,
-                def.defName,
-                def.label,
-                false);
+            var label = def.defName;
+            var description = $"{def.label} ({def.workType.defName})";
+
+            var handle = Settings.GetHandle(handleName, label, description, false);
 
             workGiverToggleHandles[handleName] = handle;
 
