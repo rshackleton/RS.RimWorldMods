@@ -12,3 +12,7 @@ obj/
 
 # Ignore vs settings
 .vs/
+
+# Ignore dependency assemblies
+0Harmony.dll
+HugsLib.dll
