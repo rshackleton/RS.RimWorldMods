@@ -12,9 +12,7 @@ mkdir "%target_directory%"
 mkdir "%target_directory%\About"
 xcopy "About\*.*" "%target_directory%\About" /e
 
-:: Patches
-mkdir "%target_directory%\Patches"
-xcopy "Patches\*.*" "%target_directory%\Patches" /e
-
-:: LoadFolders.xml
-copy "LoadFolders.xml" "%target_directory%\LoadFolders.xml"
+:: 1.4 - Assemblies
+mkdir "%target_directory%\1.4\Assemblies"
+copy "1.4\Assemblies\RS.MechCanDo.dll" "%target_directory%\1.4\Assemblies\RS.MechCanDo.dll"
+copy "1.4\Assemblies\RS.MechCanDo.pdb" "%target_directory%\1.4\Assemblies\RS.MechCanDo.pdb"

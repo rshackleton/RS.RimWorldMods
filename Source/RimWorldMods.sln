@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS.WorkSettingsFix", "RS.WorkSettingsFix\RS.WorkSettingsFix.csproj", "{2B9E017D-DD47-42EF-8CBB-340AD2E542DB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS.Locks2MiscRobots", "RS.Locks2MiscRobots\RS.Locks2MiscRobots.csproj", "{D81FE7A1-72ED-4CBE-8241-481E4D170BFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS.MechCanDo", "RS.MechCanDo\RS.MechCanDo.csproj", "{009B92D7-6402-41EF-98EB-E14EAFCAA352}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D81FE7A1-72ED-4CBE-8241-481E4D170BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D81FE7A1-72ED-4CBE-8241-481E4D170BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D81FE7A1-72ED-4CBE-8241-481E4D170BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{009B92D7-6402-41EF-98EB-E14EAFCAA352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{009B92D7-6402-41EF-98EB-E14EAFCAA352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{009B92D7-6402-41EF-98EB-E14EAFCAA352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{009B92D7-6402-41EF-98EB-E14EAFCAA352}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
