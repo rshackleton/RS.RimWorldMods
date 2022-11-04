@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[RS] Sanguophage Rebalanced</name>
+	<author>Shackleberry</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>rs.sanguophagerebalanced</packageId>
+	<description>This mod tweaks sanguophages to include some additional drawbacks and challenges.
+
+[b]Changes[/b]
+
+- UV Sensitivity increased from Mild to Intense
+- Forced Night Owl if More Genes is loaded
+- Reduced tend quality of Coagulate
+- Coagulate now causes Hemostatic Shock
+
+[b]Hemostatic Shock[/b]
+
+Hemostatic Shock is a new condition that causes a pawn to be downed for a duration based on the number of wounds tended by Coagulate. The amount of time can be configured in mod settings, or disabled completely.</description>
+	<loadAfter>
+		<li>Darkborderman.MoreTraitGenes</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+    <li>Ludeon.RimWorld</li>
+	</loadAfter>
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld.Biotech</packageId>
+      <displayName>Biotech</displayName>
+    </li>
+  </modDependencies>
+</ModMetaData>

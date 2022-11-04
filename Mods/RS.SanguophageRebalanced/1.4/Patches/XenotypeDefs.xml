@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <!-- Replace "UVSensitivity_Mild" with "UVSensitivity_Intense" -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/XenotypeDef[defName="Sanguophage"]/genes/li[text()="UVSensitivity_Mild"]</xpath>
+        <value><li>UVSensitivity_Intense</li></value>
+      </li>
+      
+      <!-- Add "NightOwl" gene from "Darkborderman.MoreTraitGenes" -->
+      <li Class="PatchOperationAdd" MayRequire="Darkborderman.MoreTraitGenes">
+        <xpath>Defs/XenotypeDef[defName="Sanguophage"]/genes</xpath>
+        <value><li>NightOwl</li></value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

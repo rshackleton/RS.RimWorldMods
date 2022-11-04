@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <!-- Reduce tend quality of "Coagulate" -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/AbilityDef[defName="Coagulate"]/comps/li[@Class="CompProperties_AbilityCoagulate"]/tendQualityRange</xpath>
+        <value><tendQualityRange>0.2~0.5</tendQualityRange></value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
