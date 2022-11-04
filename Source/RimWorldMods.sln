@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS.Locks2MiscRobots", "RS.L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS.MechCanDo", "RS.MechCanDo\RS.MechCanDo.csproj", "{009B92D7-6402-41EF-98EB-E14EAFCAA352}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS.SanguophageRebalanced", "RS.SanguophageRebalanced\RS.SanguophageRebalanced.csproj", "{6D1304C5-4690-46AB-8061-BF5EFCA3A6CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{009B92D7-6402-41EF-98EB-E14EAFCAA352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{009B92D7-6402-41EF-98EB-E14EAFCAA352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{009B92D7-6402-41EF-98EB-E14EAFCAA352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1304C5-4690-46AB-8061-BF5EFCA3A6CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1304C5-4690-46AB-8061-BF5EFCA3A6CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1304C5-4690-46AB-8061-BF5EFCA3A6CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1304C5-4690-46AB-8061-BF5EFCA3A6CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
