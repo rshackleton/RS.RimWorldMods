@@ -4,8 +4,12 @@
 			"path": "."
 		},
 		{
-			"path": "D:\\Games\\Steam\\steamapps\\common\\RimWorld\\Data"
+			"path": "D:\\Games\\Steam\\steamapps\\common\\RimWorld\\Data\\"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"rwxml.codeHighlighting.enabled": true,
+		"rwxml.diagnostics.enabled": true,
+		"rwxml.logs.level": "debug"
+	}
 }

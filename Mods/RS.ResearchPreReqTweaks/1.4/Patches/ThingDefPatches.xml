@@ -1,0 +1,46 @@
+<Patch>
+  <!-- Require Smithing -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="CE_ChemfuelStove" or defName="FueledStove"]</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>Smithing</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+  
+  <!-- Require SterileMaterials -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="CounterTopModular"]</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>SterileMaterials</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+  
+  <!-- Require MF_BasicFurniture -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Barricade" or defName="COMIGO_FloatingWoodenBarricade"]</xpath>
+      <value>
+        <researchPrerequisites>
+          <li>MF_BasicFurniture</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+  </Operation>
+  
+  <!-- Require ComplexFurniture -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Sandbags" or defName="FT_Sandbag" or defName="FT_WallSandbag"]</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>ComplexFurniture</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+</Patch>

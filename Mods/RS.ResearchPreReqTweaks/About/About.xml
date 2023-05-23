@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[RS] Research Pre-Reqs</name>
+	<author>Shackleberry</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>rs.researchprereqs</packageId>
+	<description>Adjust several vanilla and modded things to require research.</description>
+	<loadAfter>
+		<li>VanillaExpanded.VFECore</li>
+		<li>zal.industrialrevolution</li>
+	</loadAfter>
+</ModMetaData>

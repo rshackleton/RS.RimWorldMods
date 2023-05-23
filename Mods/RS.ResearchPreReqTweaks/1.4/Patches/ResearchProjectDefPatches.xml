@@ -1,0 +1,16 @@
+<Patch>
+  <!-- Require Basic Electricity -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Industrial Revolution (Continued)</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ResearchProjectDef[defName="Electricity"]</xpath>
+      <value>
+        <prerequisites>
+          <li>Industrial_BasicElectricity</li>
+        </prerequisites>
+      </value>
+    </match>
+  </Operation>
+</Patch>
