@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS.MechCanDo", "RS.MechCanD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS.SanguophageRebalanced", "RS.SanguophageRebalanced\RS.SanguophageRebalanced.csproj", "{6D1304C5-4690-46AB-8061-BF5EFCA3A6CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS.DynamicPersonaWeapons", "RS.DynamicPersonaWeapons\RS.DynamicPersonaWeapons.csproj", "{FDD7242E-5A78-477F-9C33-BE4E2758D9C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6D1304C5-4690-46AB-8061-BF5EFCA3A6CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D1304C5-4690-46AB-8061-BF5EFCA3A6CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D1304C5-4690-46AB-8061-BF5EFCA3A6CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD7242E-5A78-477F-9C33-BE4E2758D9C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD7242E-5A78-477F-9C33-BE4E2758D9C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD7242E-5A78-477F-9C33-BE4E2758D9C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD7242E-5A78-477F-9C33-BE4E2758D9C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
